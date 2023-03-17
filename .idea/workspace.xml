@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Prisma, tailwind and Apollo">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/graphql/lib/country.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/graphql/lib/record.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/graphql/resolvers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/graphql/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/prisma.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/graphql.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Instantiated Prisma, tailwind and Apollo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +66,7 @@
       <updated>1679077733537</updated>
       <workItem from="1679077734954" duration="2625000" />
       <workItem from="1679082170157" duration="94000" />
-      <workItem from="1679082279912" duration="4535000" />
+      <workItem from="1679082279912" duration="5202000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1679078862198</created>
@@ -113,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679081350799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Instantiated Prisma, tailwind and Apollo">
+      <created>1679088348741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679088348741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialization" />
     <MESSAGE value="Prisma, tailwind and Apollo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prisma, tailwind and Apollo" />
+    <MESSAGE value="Instantiated Prisma, tailwind and Apollo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Instantiated Prisma, tailwind and Apollo" />
   </component>
 </project>
