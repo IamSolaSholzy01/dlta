@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Initialization" />
+    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Initialization">
+      <change beforePath="$PROJECT_DIR$/dlta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dlta/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679077733537</updated>
-      <workItem from="1679077734954" duration="1384000" />
+      <workItem from="1679077734954" duration="1443000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1679078862198</created>
