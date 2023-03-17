@@ -37,5 +37,6 @@ next-env.d.ts
 
 # IntelliJ IDEA
 .idea
+.idea/*
 /.idea
 /.idea/*
