@@ -22,6 +22,6 @@ model Record {
   id             String  @id @default(auto()) @map("_id") @db.ObjectId
   year           Int
   population     Int
-  country        Country @relation(fields: [countryId], references: [id])
+  country        Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
   countryId      String @db.ObjectId
 }
