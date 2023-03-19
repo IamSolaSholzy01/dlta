@@ -15,7 +15,7 @@ export const CountryComponent = {
     }
     extend type Mutation {
       createCountry(country: String!, area: Float): Country
-      addRecord(id: String!, year: Int!, population: Int!): Country
+      addRecord(id: String!, year: Int!, population: Int!): Record
       deleteCountry(id: String!): Country
     }
   `,
@@ -32,8 +32,8 @@ export const CountryComponent = {
           },
         });
       },
-      country: ({ id }: { id: string }, _: any, ctx: any) => {
-        return ctx.prisma.findUnique({
+      country: (_: any, { id }: { id: string }, ctx: any) => {
+        return ctx.prisma.country.findUnique({
           where: { id },
           include: { history: true },
         });

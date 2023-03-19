@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Added Country and Records" />
+    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Cascade delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graphql/lib/country.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graphql/lib/country.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +86,7 @@
       <updated>1679077733537</updated>
       <workItem from="1679077734954" duration="2625000" />
       <workItem from="1679082170157" duration="94000" />
-      <workItem from="1679082279912" duration="29968000" />
+      <workItem from="1679082279912" duration="30982000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1679078862198</created>
@@ -134,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679256215979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Cascade delete">
+      <created>1679256577885</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679256577885</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +167,7 @@
     <MESSAGE value="Instantiated Prisma, tailwind and Apollo" />
     <MESSAGE value="Removed default code" />
     <MESSAGE value="Added Country and Records" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Country and Records" />
+    <MESSAGE value="Cascade delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cascade delete" />
   </component>
 </project>
