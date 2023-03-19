@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Instantiated Prisma, tailwind and Apollo" />
+    <list default="true" id="21607c0b-75f8-4d84-93e4-05bba9723866" name="Changes" comment="Added Country and Records">
+      <change afterPath="$PROJECT_DIR$/hooks/fetchCountries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/fetchRecords.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/countries/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/records/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graphql/lib/country.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graphql/lib/country.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graphql/lib/record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graphql/lib/record.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +39,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2N9YOZXbTYBHCt52tBXqAPDkQW0" />
   <component name="ProjectViewState">
@@ -29,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jamesbond/WebstormProjects/dlta",
+    "last_opened_file_path": "/Users/jamesbond/WebstormProjects/dlta/hooks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,6 +66,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hooks" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -66,7 +96,7 @@
       <updated>1679077733537</updated>
       <workItem from="1679077734954" duration="2625000" />
       <workItem from="1679082170157" duration="94000" />
-      <workItem from="1679082279912" duration="5202000" />
+      <workItem from="1679082279912" duration="29651000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization">
       <created>1679078862198</created>
@@ -103,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679088348741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removed default code">
+      <created>1679088865812</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679088865812</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +161,8 @@
     <MESSAGE value="Initialization" />
     <MESSAGE value="Prisma, tailwind and Apollo" />
     <MESSAGE value="Instantiated Prisma, tailwind and Apollo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Instantiated Prisma, tailwind and Apollo" />
+    <MESSAGE value="Removed default code" />
+    <MESSAGE value="Added Country and Records" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Country and Records" />
   </component>
 </project>

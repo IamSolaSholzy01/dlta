@@ -11,14 +11,82 @@ export const CountryComponent = {
     }
     extend type Query {
       countries: [Country]
+      country(id: String!): Country
+    }
+    extend type Mutation {
+      createCountry(country: String!, area: Float): Country
+      addRecord(id: String!, year: Int!, population: Int!): Country
+      deleteCountry(id: String!): Country
     }
   `,
   resolvers: {
     Query: {
-      countries: async (_, {}, ctx) => {
-        return ctx.prisma.country.findMany();
+      countries: (_: any, {}: any, ctx: any) => {
+        return ctx.prisma.country.findMany({
+          include: {
+            history: {
+              orderBy: {
+                year: "desc",
+              },
+            },
+          },
+        });
+      },
+      country: ({ id }: { id: string }, _: any, ctx: any) => {
+        return ctx.prisma.findUnique({
+          where: { id },
+          include: { history: true },
+        });
       },
     },
-    Mutation: {},
+    Mutation: {
+      createCountry: (
+        _: any,
+        data: { country: string; area: string },
+        ctx: any
+      ) => {
+        return ctx.prisma.country.create({
+          data,
+        });
+      },
+      addRecord: async (
+        _: any,
+        {
+          id,
+          year,
+          population,
+        }: { id: string; year: number; population: number },
+        ctx: any
+      ) => {
+        const existing = await ctx.prisma.record.findMany({
+          where: { countryId: id, year },
+        });
+        if (existing.length)
+          return ctx.prisma.record.update({
+            where: { id: existing[0].id },
+            data: {
+              population,
+            },
+          });
+        return ctx.prisma.country.update({
+          where: { id },
+          data: {
+            history: {
+              create: [
+                {
+                  year,
+                  population,
+                },
+              ],
+            },
+          },
+        });
+      },
+      deleteCountry: (_: any, { id }: { id: string }, ctx: any) => {
+        return ctx.prisma.country.delete({
+          where: { id },
+        });
+      },
+    },
   },
 };

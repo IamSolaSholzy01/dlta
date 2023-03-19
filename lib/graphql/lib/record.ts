@@ -12,13 +12,25 @@ export const RecordsComponent = {
     extend type Query {
       history: [Record]
     }
+    extend type Mutation {
+      deleteRecord(id: String!): Record
+    }
   `,
   resolvers: {
     Query: {
-      history: async (_, {}, ctx) => {
-        return ctx.prisma.record.findMany();
+      history: async (_: any, {}: any, ctx: any) => {
+        return ctx.prisma.record.findMany({
+          include: { country: true },
+          orderBy: { year: "asc" },
+        });
       },
     },
-    Mutation: {},
+    Mutation: {
+      deleteRecord: (_: any, { id }: { id: string }, ctx: any) => {
+        return ctx.prisma.record.delete({
+          where: { id },
+        });
+      },
+    },
   },
 };
